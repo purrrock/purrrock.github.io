@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>PurrRock — виртуальная банда котов</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-family: "Segoe UI", sans-serif;
+      color: #f2f2f2;
+      background: linear-gradient(135deg, #0d0d0d 0%, #1a1a40 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* Силуэты */
+    body::before, body::after {
+      content: "🎸";
+      position: absolute;
+      font-size: 25vw;
+      color: rgba(255,255,255,0.05);
+      z-index: 0;
+      transform: rotate(-15deg);
+    }
+    body::before {
+      top: 5%;
+      left: -10%;
+    }
+    body::after {
+      bottom: -10%;
+      right: -5%;
+      content: "🐾";
+      transform: rotate(20deg);
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+      z-index: 1;
+    }
+    p {
+      max-width: 600px;
+      font-size: 1.2em;
+      margin: 0.5em auto 1.5em;
+      z-index: 1;
+    }
+
+    .links {
+      display: flex;
+      gap: 1em;
+      flex-wrap: wrap;
+      justify-content: center;
+      z-index: 1;
+    }
+    .btn {
+      padding: 0.6em 1.2em;
+      border: 2px solid #f2f2f2;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #f2f2f2;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    .btn:hover {
+      background: #f2f2f2;
+      color: #0d0d0d;
+    }
+
+    footer {
+      margin-top: 2em;
+      font-size: 0.9em;
+      opacity: 0.7;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <h1>🐾 PurrRock 🐾</h1>
+  <p>Виртуальная рок-банда двух котов:<br>
+  мудрый Ниппель (Nibble) и озорной Пупс (Pips).</p>
+  <p>Мы играем всё, что мурчит в душе: рок, романс, хип-хоп, баллады.<br>
+  Скоро тут появится музыка и истории прямиком из кошачьей головы.</p>
+
+  <div class="links">
+    <a class="btn" href="https://www.youtube.com/@PurrRock/videos" target="_blank">YouTube</a>
+    <a class="btn" href="https://soundcloud.com/purrrock" target="_blank">SoundCloud</a>
+    <a class="btn" href="https://open.spotify.com/artist/3oxWS8AC7x4Jl6mYJKr8pE" target="_blank">Spotify</a>
+  </div>
+
+  <footer>© PurrRock, 2025</footer>
+</body>
+</html>
