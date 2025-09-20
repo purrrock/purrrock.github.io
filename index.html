@@ -1,100 +1,362 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <title>PurrRock — виртуальная банда котов</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      font-family: "Segoe UI", sans-serif;
-      color: #f2f2f2;
-      background: linear-gradient(135deg, #0d0d0d 0%, #1a1a40 100%);
-      overflow: hidden;
-      position: relative;
-    }
+<!DOCTYPE HTML>
+<!--
+	Lens by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>PurrRock</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+	</head>
+	<body class="is-preload-0 is-preload-1 is-preload-2">
 
-    /* Силуэты */
-    body::before, body::after {
-      content: "🎸";
-      position: absolute;
-      font-size: 25vw;
-      color: rgba(255,255,255,0.05);
-      z-index: 0;
-      transform: rotate(-15deg);
-    }
-    body::before {
-      top: 5%;
-      left: -10%;
-    }
-    body::after {
-      bottom: -10%;
-      right: -5%;
-      content: "🐾";
-      transform: rotate(20deg);
-    }
+		<!-- Main -->
+			<div id="main">
 
-    h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
-      z-index: 1;
-    }
-    p {
-      max-width: 600px;
-      font-size: 1.2em;
-      margin: 0.5em auto 1.5em;
-      z-index: 1;
-    }
+				<!-- Header -->
+					<header id="header">
+						<h1 class="neon-text">🐾 PurrRock</h1>
+						<p>Истории в шести струнах и одном мурчании</p>
+						<ul class="icons">
+							<li><a href="https://www.youtube.com/@PurrRock/videos" target="_blank" class="icon brands fa-youtube"><span class="label">YouTube</span></a></li>
+							<li><a href="https://www.instagram.com/purrrock/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+        <li><a href="https://open.spotify.com/artist/3oxWS8AC7x4Jl6mYJKr8pE" class="icon brands fa-spotify"><span class="label">Spotify</span></a></li>
+        <li><a href="https://soundcloud.com/purrrock" class="icon brands fa-soundcloud"><span class="label">SoundCloud</span></a></li>
+							<li><a href="https://vk.com/purrrock" target="_blank" class="icon brands fa-vk"><span class="label">VK</span></a></li>
+<li style="position: relative;"><a href="#" id="email-link" data-rev-email="moc.liamg@kcorrrup" class="icon fa-envelope"><span class="label">Email</span></a></li>
+							<li><span class="label"><h1 class="neon-text">🐾</h1></span></li>
+						</ul>
+					</header>
 
-    .links {
-      display: flex;
-      gap: 1em;
-      flex-wrap: wrap;
-      justify-content: center;
-      z-index: 1;
-    }
-    .btn {
-      padding: 0.6em 1.2em;
-      border: 2px solid #f2f2f2;
-      border-radius: 8px;
-      text-decoration: none;
-      color: #f2f2f2;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      z-index: 1;
-    }
-    .btn:hover {
-      background: #f2f2f2;
-      color: #0d0d0d;
-    }
+				<!-- Thumbnail -->
+					<section id="thumbnails">
+<article>
+	<a class="thumbnail" href="images/fulls/about.jpg"><img src="images/thumbs/about_thumb.jpg" alt="О группе PurrRock" /></a>
+	
 
-    footer {
-      margin-top: 2em;
-      font-size: 0.9em;
-      opacity: 0.7;
-      z-index: 1;
+		<div class="two-columns">
+			<div class="column">
+				<h2 class="neon-text">Ниппель (Nibble)</h2>
+				<p class="black-glow">Серебристый Нибелунг с зелёными глазами.<br>Серьёзный, мудрый и рассудительный ветеран сцены.</p>
+			</div>
+			<div class="column right-align">
+				<h2 class="neon-text">Пупс (Pips)</h2>
+				<p class="black-glow">Кот окраса такседо с жёлтыми глазами.<br>Шустрый, весёлый, шаловливый и полный энергии.</p>
+			</div>
+		</div>
+		<p class="black-glow align-center">Виртуальная рок-банда двух котов.<br>Мы играем всё, что мурчит в душе: рок, романс, хип-хоп, баллады.<br>Скоро тут появится музыка и истории прямиком из кошачьей головы.</p>
+
+</article>
+
+
+<!-- Плитка для текстов песен -->
+<article>
+	<a class="thumbnail" href="images/fulls/lyrics.jpg" data-position="left center"><img src="images/thumbs/lyrics_thumb.jpg" alt="Тексты песен PurrRock" /></a>
+	
+	<!-- Альбом "Диорама" -->
+	<h3 class="neon-text">Альбом "Диорама" (2025)</h3>
+	<p class="album-description black-glow">Каждая песня — это диорама,<br> где коты наблюдают за драмами людей и вещей.</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/dao.html" target="_blank"><i class="fas fa-scroll"></i>Дао тунца</a></span>
+		<span class="song-description">рэп о проблеме коммуникации и обесценивании.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/korol.html" target="_blank"><i class="fas fa-scroll"></i>Король картонного замка</a></span>
+		<span class="song-description">гимн воображению и простым радостям.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/devyataya.html" target="_blank"><i class="fas fa-scroll"></i>Девятая</a></span>
+		<span class="song-description">метафора бремени чужих ожиданий.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/meh.html" target="_blank"><i class="fas fa-scroll"></i>Мех vs Tech</a></span>
+		<span class="song-description">эпичная покатушка на пылесосе!</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/bluz.html" target="_blank"><i class="fas fa-scroll"></i>Блюз затерянной мыши</a></span>
+		<span class="song-description">песня о памяти и утрате.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/ballada.html" target="_blank"><i class="fas fa-scroll"></i>Баллада о Диком озере</a></span>
+		<span class="song-description">мистическая легенда о любви и смерти.</span>
+	</p>
+
+	<!-- Альбом "Песни из шкафа" -->
+	<h3 class="neon-text">Альбом "Песни из шкафа" (2025)</h3>
+	<p class="album-description black-glow">Альбом забытых песен, ждавших своего часа.<br>Меньше котов, больше боли, света и иронии.</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/spasibo.html" target="_blank"><i class="fas fa-scroll"></i>Спасибо вам</a></span>
+		<span class="song-description">романс о несбывшейся любви.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/vals.html" target="_blank"><i class="fas fa-scroll"></i>Вальс бесконечности</a></span>
+		<span class="song-description">прощальный танец на берегу моря.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/ya.html" target="_blank"><i class="fas fa-scroll"></i>Я тот, кто сидит в шкафу</a></span>
+		<span class="song-description">о внутреннем пробуждении.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/zimniy.html" target="_blank"><i class="fas fa-scroll"></i>Зимний блюз</a></span>
+		<span class="song-description">одиночество и надежда.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/infotsyganskaya.html" target="_blank"><i class="fas fa-scroll"></i>Инфоцыганская</a></span>
+		<span class="song-description">хип-хоп про лёгкие деньги.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/feniks.html" target="_blank"><i class="fas fa-scroll"></i>Феникс</a></span>
+		<span class="song-description">антивоенный марш.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/tamara.html" target="_blank"><i class="fas fa-scroll"></i>Тамара</a></span>
+		<span class="song-description">баллада о роковой морской сирене.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/kostyanye.html" target="_blank"><i class="fas fa-scroll"></i>Костяные рыбы</a> / <a href="lyrics/abyss.html" target="_blank">Abyss Fish</a></span>
+		<span class="song-description">космический рок-хоррор.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/zheleznyy.html" target="_blank"><i class="fas fa-scroll"></i>Железный Дед</a> / <a href="lyrics/iron.html" target="_blank">Iron Elder</a></span>
+		<span class="song-description">гимн силы и духа гор.</span>
+	</p>
+
+	<!-- Альбом "Hero Cats" -->
+	<h3 class="neon-text">Альбом "Hero Cats" (2024)</h3>
+	<p class="album-description black-glow">Песни о мире, увиденном глазами поющих котов.<br>Коты лишь дают голос историям людей.</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/migrant.html" target="_blank"><i class="fas fa-scroll"></i>Мигрант</a> / <a href="lyrics/migrant_en.html" target="_blank">Migrant</a></span>
+		<span class="song-description">о тяжёлой жизни и тоске вдали от дома.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/koty.html" target="_blank"><i class="fas fa-scroll"></i>Коты на колёсах</a> / <a href="lyrics/cats.html" target="_blank">Cats on the Wheels</a></span>
+		<span class="song-description">о бесстрашных котах-путешественниках.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/trevel.html" target="_blank"><i class="fas fa-scroll"></i>Тревел-блогер</a> / <a href="lyrics/travel.html" target="_blank">Travel Blogger</a></span>
+		<span class="song-description">рок о погоне за лайками.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/beseda.html" target="_blank"><i class="fas fa-scroll"></i>Беседа на подоконнике</a> / <a href="lyrics/windowsill.html" target="_blank">Windowsill Reflections</a></span>
+		<span class="song-description">философия у окна.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/koty-kvadrobery.html" target="_blank"><i class="fas fa-scroll"></i>Коты-квадроберы</a></span>
+		<span class="song-description">заводной абсурдный Rock-n-Roll.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/novogodniy.html" target="_blank"><i class="fas fa-scroll"></i>Новогодний мур-мюр</a></span>
+		<span class="song-description">поздравление от котов.</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="lyrics/kakova.html" target="_blank"><i class="fas fa-scroll"></i>Какова Цена?</a> / <a href="lyrics/who.html" target="_blank">Who Pays the Price?</a></span>
+		<span class="song-description">антивоенная песня.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="lyrics/novye.html" target="_blank"><i class="fas fa-scroll"></i>Новые игры</a></span>
+		<span class="song-description">первая мяу-попытка.</span>
+	</p>
+</article>
+<!-- Плитка для прозы -->
+<article>
+	<a class="thumbnail" href="images/fulls/proza.jpg"><img src="images/thumbs/proza_thumb.jpg" alt="Рассказы PurrRock" /></a>
+	
+	<h3 class="neon-text">2025</h3>
+	
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="proza/top.html" target="_blank"><i class="fas fa-feather-alt"></i>Топь</a></span>
+		<span class="song-description">Конфликт христианства и язычества</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="proza/protiv.html" target="_blank"><i class="fas fa-feather-alt"></i>PurrRock против машин</a></span>
+		<span class="song-description">Усатая гвардия или бездушная техника?</span>
+	</p>
+</article>
+
+<!-- Плитка для музыки -->
+<article>
+	<a class="thumbnail" href="images/fulls/music.jpg"><img src="images/thumbs/music_thumb.jpg" alt="Музыка PurrRock" /></a>
+	<!-- Альбом "Диорама" -->
+	<h3 class="neon-text">Альбом "Диорама" (2025)</h3>
+	<p class="album-description black-glow">Каждая песня — это диорама,<br> где коты наблюдают за драмами людей и вещей.</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините😔">
+    <span class="song-title"><a href="music/dao.mp3"><i class="fas fa-music"></i>Дао тунца</a></span>
+    <span class="song-description">рэп о проблеме коммуникации и обесценивании.</span>
+</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/korol.mp3" target="_blank"><i class="fas fa-music"></i>Король картонного замка</a></span>
+		<span class="song-description">гимн воображению и простым радостям.</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="music/devyataya.mp3" target="_blank"><i class="fas fa-music"></i>Девятая</a></span>
+		<span class="song-description">метафора бремени чужих ожиданий.</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="music/meh.mp3" target="_blank"><i class="fas fa-music"></i>Мех vs Tech</a></span>
+		<span class="song-description">эпичная покатушка на пылесосе!</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="music/bluz.mp3" target="_blank"><i class="fas fa-music"></i>Блюз затерянной мыши</a></span>
+		<span class="song-description">песня о памяти и утрате.</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="music/ballada.mp3" target="_blank"><i class="fas fa-music"></i>Баллада о Диком озере</a></span>
+		<span class="song-description">мистическая легенда о любви и смерти.</span>
+	</p>
+
+	<!-- Альбом "Песни из шкафа" -->
+	<h3 class="neon-text">Альбом "Песни из шкафа" (2025)</h3>
+	<p class="album-description black-glow">Альбом забытых песен, ждавших своего часа.<br>Меньше котов, больше боли, света и иронии.</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/spasibo.mp3" target="_blank"><i class="fas fa-music"></i>Спасибо вам</a></span>
+		<span class="song-description">романс о несбывшейся любви.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/vals.mp3" target="_blank"><i class="fas fa-music"></i>Вальс бесконечности</a></span>
+		<span class="song-description">прощальный танец на берегу моря.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/ya.mp3" target="_blank"><i class="fas fa-music"></i>Я тот, кто сидит в шкафу</a></span>
+		<span class="song-description">о внутреннем пробуждении.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/zimniy.mp3" target="_blank"><i class="fas fa-music"></i>Зимний блюз</a></span>
+		<span class="song-description">одиночество и надежда.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/infotsyganskaya.mp3" target="_blank"><i class="fas fa-music"></i>Инфоцыганская</a></span>
+		<span class="song-description">хип-хоп про лёгкие деньги.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/feniks.mp3" target="_blank"><i class="fas fa-music"></i>Феникс</a></span>
+		<span class="song-description">антивоенный марш.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/tamara.mp3" target="_blank"><i class="fas fa-music"></i>Тамара</a></span>
+		<span class="song-description">баллада о роковой морской сирене.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/kostyanye.mp3" target="_blank"><i class="fas fa-music"></i>Костяные рыбы</a> / <a href="music/abyss.mp3" target="_blank">Abyss Fish</a></span>
+		<span class="song-description">космический рок-хоррор.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/zheleznyy.mp3" target="_blank"><i class="fas fa-music"></i>Железный Дед</a> / <a href="music/iron.mp3" target="_blank">Iron Elder</a></span>
+		<span class="song-description">гимн силы и духа гор.</span>
+	</p>
+
+	<!-- Альбом "Hero Cats" -->
+	<h3 class="neon-text">Альбом "Hero Cats" (2024)</h3>
+	<p class="album-description black-glow">Песни о мире, увиденном глазами поющих котов.<br>Коты лишь дают голос историям людей.</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/migrant.mp3" target="_blank"><i class="fas fa-music"></i>Мигрант</a> / <a href="music/migrant_en.mp3" target="_blank">Migrant</a></span>
+		<span class="song-description">о тяжёлой жизни и тоске вдали от дома.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/koty.mp3" target="_blank"><i class="fas fa-music"></i>Коты на колёсах</a> / <a href="music/cats.mp3" target="_blank">Cats on the Wheels</a></span>
+		<span class="song-description">о бесстрашных котах-путешественниках.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/trevel.mp3" target="_blank"><i class="fas fa-music"></i>Тревел-блогер</a> / <a href="music/travel.mp3" target="_blank">Travel Blogger</a></span>
+		<span class="song-description">рок о погоне за лайками.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/beseda.mp3" target="_blank"><i class="fas fa-music"></i>Беседа на подоконнике</a> / <a href="music/windowsill.mp3" target="_blank">Windowsill Reflections</a></span>
+		<span class="song-description">философия у окна.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/koty-kvadrobery.mp3" target="_blank"><i class="fas fa-music"></i>Коты-квадроберы</a></span>
+		<span class="song-description">заводной абсурдный Rock-n-Roll.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/novogodniy.mp3" target="_blank"><i class="fas fa-music"></i>Новогодний мур-мюр</a></span>
+		<span class="song-description">поздравление от котов.</span>
+	</p>
+<p class="song-row black-glow unavailable" data-tooltip="Песня временно недоступна, извините 😿">
+		<span class="song-title"><a href="music/kakova.mp3" target="_blank"><i class="fas fa-music"></i>Какова Цена?</a> / <a href="music/who.mp3" target="_blank">Who Pays the Price?</a></span>
+		<span class="song-description">антивоенная песня.</span>
+	</p>
+	<p class="song-row black-glow">
+		<span class="song-title"><a href="music/novye.mp3" target="_blank"><i class="fas fa-music"></i>Новые игры</a></span>
+		<span class="song-description">первая мяу-попытка.</span>
+	</p>
+</article>
+						<article>
+							<a class="thumbnail" href="images/fulls/pics.jpg" data-position="top center"><img src="images/thumbs/pics_thumb.jpg" alt="" /></a>
+							<h2 class="neon-text">Картинки к песням</h2>
+							<p>Разный кото-арт.</p>
+						</article>
+<!-- Временно убраны
+						<article class="stylized-thumbnail">
+							<a class="thumbnail" href="images/fulls/tamara.jpg" data-position="left center"><img src="images/thumbs/tamara.jpg" alt="" /></a>
+							<h2>Тамара</h2>
+							<p>Звала меня. И вот я твой, навеки!</p>
+						</article>
+						<article class="stylized-thumbnail">
+							<a class="thumbnail" href="images/fulls/korol.jpg"><img src="images/thumbs/korol.jpg" alt="" /></a>
+							<h2>Король картонного замка</h2>
+							<p>Коробка? Нет, друг, это — трон!<br>Король — кто смеётся, кто сам есть — закон!<br>Мрррр....</p>
+						</article>
+ -->
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; PurrRock.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/main.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const emailLink = document.getElementById('email-link');
+    if (emailLink) {
+        const reversedEmail = emailLink.getAttribute('data-rev-email');
+        const email = reversedEmail.split('').reverse().join('');
+
+        // Создаем элемент для подсказки один раз
+        const tooltip = document.createElement('div');
+        tooltip.textContent = 'Email: ' + email;
+        tooltip.classList.add('email-tooltip');
+        emailLink.parentElement.appendChild(tooltip);
+        
+        // "Оживляем" ссылку при первом клике
+        emailLink.addEventListener('click', function(event) {
+            event.preventDefault(); // Отменяем стандартное действие ссылки
+            
+            // Показываем/прячем подсказку по клику (для мобильных)
+            tooltip.classList.toggle('visible');
+
+            // Устанавливаем правильный mailto:
+            if (!this.href.startsWith('mailto:')) {
+                this.href = 'mailto:' + email;
+            }
+
+            // Прячем подсказку через 3 секунды, если она была показана
+            setTimeout(function() {
+                tooltip.classList.remove('visible');
+            }, 3000);
+        });
     }
-  </style>
-</head>
-<body>
-  <h1>🐾 PurrRock 🐾</h1>
-  <p>Виртуальная рок-банда двух котов:<br>
-  мудрый Ниппель (Nibble) и озорной Пупс (Pips).</p>
-  <p>Мы играем всё, что мурчит в душе: рок, романс, хип-хоп, баллады.<br>
-  Скоро тут появится музыка и истории прямиком из кошачьей головы.</p>
-
-  <div class="links">
-    <a class="btn" href="https://www.youtube.com/@PurrRock/videos" target="_blank">YouTube</a>
-    <a class="btn" href="https://soundcloud.com/purrrock" target="_blank">SoundCloud</a>
-    <a class="btn" href="https://open.spotify.com/artist/3oxWS8AC7x4Jl6mYJKr8pE" target="_blank">Spotify</a>
-  </div>
-
-  <footer>© PurrRock, 2025</footer>
-</body>
+});
+</script>
+	</body>
 </html>
+
