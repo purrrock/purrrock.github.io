@@ -815,7 +815,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 1em 0 0;
+			padding: 0 0.3em 0 0;
 		}
 
 			ul.icons li:last-child {
@@ -1022,9 +1022,11 @@ input, select, textarea {
 				display: none;
 			}
 
-			#thumbnails article.active .thumbnail:before {
-				opacity: 1;
-			}
+#thumbnails article.active .thumbnail:before {
+    /* Enhanced neon glow effect */
+    box-shadow: inset 0 0 2px #fff, 0 0 5px #00FFFF, 0 0 10px #00FFFF, 0 0 15px #00FFFF;
+    opacity: 1;
+}
 
 		@media screen and (max-width: 480px) {
 
@@ -1431,10 +1433,11 @@ input, select, textarea {
     margin-bottom: 0em;
 }
 
-/* --- Отступ для иконки свитка --- */
-.song-title .fa-scroll {
-	margin-right: 0.5em;
+/* --- Отступ для иконок в ссылках --- */
+.song-title .fas, .back-link .fas {
+	margin-right: 0.5em; /* Увеличил отступ для наглядности */
 }
+
 /* --- Стили для двух колонок в разделе "О группе" --- */
 .two-columns {
 	display: flex;
@@ -1454,4 +1457,154 @@ input, select, textarea {
 .column.right-align {
 	text-align: right;
 }
-/* --- Стили для вертикального расположения в "О группе" --- */
+/* --- Стили для контейнера с текстом песни --- */
+.lyrics-container {
+	max-width: 800px;
+	margin: 4em auto;
+	padding: 3em;
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	color: #ccc;
+}
+/* --- Стили для текста песни --- */
+.lyrics-text {
+
+	font-size: 1em;
+	line-height: 1;
+	text-align: left;
+	white-space: pre-wrap; /* <-- Вот это свойство! */
+}
+/* --- Более контрастный фильтр для стилизации плиток --- */
+.stylized-thumbnail .thumbnail::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/* Увеличиваем непрозрачность градиента для более яркого свечения */
+	background: linear-gradient(45deg, rgba(255, 51, 225, 1), rgba(0, 211, 183, 1));
+	/* Меняем режим наложения на "жесткий", чтобы цвета "вжигались" в картинку */
+	mix-blend-mode: color-dodge;
+}
+
+.stylized-thumbnail .thumbnail img {
+	/* Убираем все цвета (grayscale 100%) и выкручиваем контраст */
+	filter: grayscale(100%) contrast(180%) brightness(0.6);
+}
+
+/* ослабляем эффект при наведении, чтобы картинка проявилась */
+.stylized-thumbnail:hover .thumbnail::after {
+	opacity: 0;
+}
+/* --- Interactive Hover for Social Icons --- */
+#header .icons a {
+    transition: transform 0.2s ease, text-shadow 0.2s ease; /* Add smooth transition */
+}
+/* --- Неоновое свечение для ссылок при наведении --- */
+#header .icons a:hover {
+    text-shadow:
+        0 0 4px #fff,
+        0 0 8px #ff33ff; /* Add a pink neon glow */
+}
+
+span.song-title a:hover {
+    text-shadow:
+        0 0 4px #aa00aa,
+        0 0 8px #aa00aa !important; /* Розовое неоновое свечение */
+}
+
+/* --- Неоновое свечение для ВСЕХ SVG-иконок --- */
+/* Плавный переход для всех SVG-элементов управления */
+#main .toggle,
+#viewer .inner .toggle,
+#viewer .inner .nav-next,
+#viewer .inner .nav-previous {
+	transition: filter 0.25s ease;
+}
+
+/* Эффект свечения при наведении */
+#main .toggle:hover,
+#viewer .inner .toggle:hover,
+#viewer .inner .nav-next:hover,
+#viewer .inner .nav-previous:hover {
+	filter: 
+		drop-shadow(0 0 2px #fff) 
+		drop-shadow(0 0 5px #00FFFF) 
+		drop-shadow(0 0 8px #00FFFF); /* Бирюзовое свечение */
+}
+
+/* --- Стили для всплывающей подсказки Email --- */
+.email-tooltip {
+	position: absolute;
+	bottom: 125%; /* Расположение над иконкой */
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #00D3B7; /* Фирменный бирюзовый цвет */
+	color: #000;
+	padding: 8px 12px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	white-space: nowrap;
+	z-index: 10;
+}
+
+/* Показываем подсказку при наведении или клике */
+.email-tooltip.visible,
+#email-link:hover + .email-tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* --- Стили для временно недоступных песен --- */
+
+/* Делаем всю строку полупрозрачной и готовим к появлению подсказки */
+.song-row.unavailable {
+	opacity: 0.6;
+	position: relative; 
+}
+
+/* Меняем курсор на "запрещено" для ссылки внутри неактивной строки */
+.song-row.unavailable a {
+	cursor: not-allowed;
+	pointer-events: none; 
+}
+
+/* Создаем саму подсказку через псевдо-элемент */
+.song-row.unavailable::after {
+	content: attr(data-tooltip); /* Берем текст подсказки из data-атрибута HTML */
+	position: absolute;
+	bottom: 125%; /* Позиция над текстом */
+	left: 50%;
+	transform: translateX(-50%);
+	
+	/* Стили самой подсказки (похоже на ту, что у email) */
+	background-color: #00D3B7;
+	color: #000;
+	padding: 8px 12px;
+	border-radius: 5px;
+	font-size: 0.8em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	white-space: nowrap;
+	z-index: 10;
+	text-shadow: none;
+	
+	/* Скрываем по умолчанию */
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.2s ease, visibility 0.2s ease;
+	pointer-events: none; /* Чтобы подсказка не мешала курсору */
+}
+
+/* Показываем подсказку при наведении на всю строку */
+.song-row.unavailable:hover::after {
+	opacity: 1;
+	visibility: visible;
+}
