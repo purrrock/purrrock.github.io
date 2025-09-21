@@ -887,12 +887,6 @@ body, input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
-			#main {
-				background: #000;
-				background-image: url('../../images/background.jpg');
-			}
-
 				#main .toggle {
 					display: block;
 				}
