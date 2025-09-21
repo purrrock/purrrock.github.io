@@ -254,8 +254,8 @@ var main = (function($) { var _ = {
 							if ((_.$viewer.scrollTop() <= 0 && diffY < 0)
 							|| (ts > (th - 2) && ts < (th + 2) && diffY > 0)) {
 
-								event.preventDefault();
-								event.stopPropagation();
+							//	event.preventDefault();
+							//	event.stopPropagation();
 
 							}
 
