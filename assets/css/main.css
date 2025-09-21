@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
@@ -140,13 +141,13 @@ input, select, textarea {
 		color: #aaa;
 	}
 
-	body, input, select, textarea {
-		font-family: "Roboto", Helvetica, sans-serif;
-		font-weight: 400;
-		line-height: 1.65;
-		font-size: 1em;
-		color: #aaa;
-	}
+body, input, select, textarea {
+    font-family: 'WDXL Lubrifont TC', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 1em;
+    color: #aaa;
+}
 
 	a {
 		-moz-transition: color 0.25s ease, border-bottom-color 0.25s ease;
@@ -815,7 +816,7 @@ input, select, textarea {
 
 		ul.icons li {
 			display: inline-block;
-			padding: 0 0.3em 0 0;
+			padding: 0 0.1em 0 0;
 		}
 
 			ul.icons li:last-child {
@@ -1391,11 +1392,6 @@ input, select, textarea {
 		0 0 55px black;
  /* 8 слоёв черной тени для создания мягкого ореола */
 }
-/* --- Коррекция отступов в списке песен --- */
-/* Убираем нижний отступ у описания альбома, чтобы оно было ближе к песням */
-.album-description {
-	margin-bottom: 0em; 
-}
 
 /* Добавляем верхний отступ к заголовку альбома, чтобы отделить его от предыдущего блока */
 #viewer .slide .caption h3 {
@@ -1607,4 +1603,73 @@ span.song-title a:hover {
 .song-row.unavailable:hover::after {
 	opacity: 1;
 	visibility: visible;
+}
+/* --- Стили для кнопок поддержки проекта --- */
+.donation-links {
+	text-align: left; /* Центрируем кнопки */
+}
+
+.donation-links p {
+	margin-bottom: 0.5em;
+}
+
+.donation-links a {
+	display: inline-block; /* <-- ГЛАВНОЕ ИЗМЕНЕНИЕ */
+	min-width: 200px; /* Задаем минимальную ширину, чтобы кнопки не были слишком узкими */
+	padding: 0.75em;
+	border: 2px solid #ff33ff;
+	border-radius: 8px;
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Audiowide', cursive;
+	transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.donation-links a:hover {
+	background-color: rgba(255, 51, 255, 0.1);
+	box-shadow: 0 0 8px #ff33ff, 0 0 15px #ff33ff; /* Усиливаем свечение */
+}
+/* --- Стиль для сияющих имен в благодарностях --- */
+.neon-cyan-text {
+	color: #00FFFF;
+	text-shadow: 0 0 2px #fff, 0 0 6px #00FFFF, 0 0 10px #00FFFF;
+}
+
+/* Стили для кастомных SVG иконок */
+.icon.custom-svg {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.25em; 
+    height: 3.25em;
+    border-radius: 100%;
+    border: 0;
+    margin: 0 -1em; 
+    transition: all 0.2s ease-in-out; /* Переносим transition сюда */
+}
+
+.icon.custom-svg svg {
+    width: 1.5em; 
+    height: 1.5em;
+    fill: #00FFFF; /* Цвет иконки (бирюзовый неон по умолчанию) */
+    filter: drop-shadow(0 0 5px #00FFFF); /* Неоновое свечение */
+}
+
+.icon.custom-svg:hover svg {
+    fill: #ff33ff; /* Пурпурный неон при наведении */
+    filter: drop-shadow(0 0 5px #ff33ff) drop-shadow(0 0 10px #ff33ff); /* Усиленное свечение */
+}
+
+.icon.custom-svg:hover {
+    transform: scale(1.1); /* Легкое увеличение всего контейнера */
+}
+
+/* Специфические стили для иконки Яндекс.Музыки, если нужны особые корректировки */
+.icon.yandex-music-svg svg {
+    /* Если нужно что-то изменить только для этой иконки, например, размер или сдвиг */
+    /* transform: translateY(-0.05em);  пример небольшого сдвига */
+}
+/* --- Коррекция положения иконки Яндекс.Музыки --- */
+.yandex-music-svg {
+	position: relative;
+	top: 0.15em; /* Немного опускаем иконку вниз */
 }
