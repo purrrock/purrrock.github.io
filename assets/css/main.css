@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
-
 /*
 	Lens by HTML5 UP
 	html5up.net | @ajlkn
@@ -111,7 +109,7 @@ input, select, textarea {
 
 	html, body {
 		background-color: #101010;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 /* Type */
@@ -1542,7 +1540,7 @@ span.song-title a:hover {
 	padding: 8px 12px;
 	border-radius: 5px;
 	font-size: 0.8em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'WDXL Lubrifont TC', sans-serif;
 	font-weight: 700;
 	opacity: 0;
 	visibility: hidden;
@@ -1586,7 +1584,7 @@ span.song-title a:hover {
 	padding: 8px 12px;
 	border-radius: 5px;
 	font-size: 0.8em;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'WDXL Lubrifont TC', sans-serif;
 	font-weight: 700;
 	white-space: nowrap;
 	z-index: 10;
