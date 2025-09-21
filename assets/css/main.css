@@ -1340,6 +1340,12 @@ body, input, select, textarea {
 			}
 			#viewer .slide .caption {
     			max-height: 95vh; /* Ограничиваем высоту блока (80% от высоты экрана) */
+	/* Градиент начинается прозрачным сверху и переходит в сплошной цвет */
+		background: linear-gradient(
+		to bottom, /* Направление: сверху вниз */
+		transparent 0%,
+		rgba(16, 16, 16, 0.85) 15%
+		);			
 			}
 
 				#viewer .inner .toggle {
@@ -1354,8 +1360,25 @@ body, input, select, textarea {
 					transition-delay: 0.5s;
 					opacity: 1;
 				}
+/* --- Плавное затухание ВЕРХНЕЙ границы фона --- */
+#viewer .slide .caption {
 
-		}
+}
+/* --- Адаптация списка песен для узких экранов --- */
+	.song-row {
+		flex-direction: column; /* Ставим название и описание друг под друга */
+		align-items: flex-start; /* Выравниваем всё по левому краю */
+		margin-bottom: 1.25em;   /* Увеличиваем отступ между песнями */
+	}
+	.song-title {
+		white-space: normal; /* Разрешаем перенос очень длинных названий */
+	}
+	.song-description {
+		text-align: left;      /* Описание тоже выравниваем по левому краю */
+		padding-left: 1.9em;   /* Добавляем отступ, чтобы текст был под названием, а не под иконкой */
+		margin-top: 0.3em;     /* Небольшой отступ сверху от названия */
+	}
+	}
 /* --- Стиль для неонового текста PurrRock --- */
 .neon-text {
   font-family: 'Audiowide', cursive;
