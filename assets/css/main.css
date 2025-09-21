@@ -1338,6 +1338,9 @@ body, input, select, textarea {
 				transition-delay: 0s;
 				opacity: 0;
 			}
+			#viewer .slide .caption {
+    			max-height: 95vh; /* Ограничиваем высоту блока (80% от высоты экрана) */
+			}
 
 				#viewer .inner .toggle {
 					background-image: url("images/close-small.svg") !important;
