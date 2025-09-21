@@ -920,7 +920,10 @@ body, input, select, textarea {
 				#main .toggle {
 					display: none;
 				}
-
+	#viewer .slide .caption {
+		background-color: rgba(16, 16, 16, 0.85); /* Полупрозрачный темно-серый фон */
+		padding: 1.5em; /* Немного скорректируем отступы для маленьких экранов */
+	}
 		}
 
 /* Header */
