@@ -10,6 +10,11 @@
   <changefreq>weekly</changefreq> 
   <priority>1.0</priority>
 </url>
+<url>
+  <loc>https://purrrock.github.io/lite.html</loc>
+  <lastmod>2025-11-18T12:00:00+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
 <url> 
   <loc>https://purrrock.github.io/lyrics/gata.html</loc>
   <lastmod>2025-11-18T10:04:39+00:00</lastmod>
