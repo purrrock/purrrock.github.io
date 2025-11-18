@@ -1,93 +1,230 @@
 <!DOCTYPE HTML>
 <html lang="ru">
 <head>
-    <title>PurrRock — Текстовая версия (Карта сайта)</title>
+    <title>PurrRock — Текстовая версия и Карта сайта</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Упрощенная версия сайта рок-группы PurrRock для программ чтения с экрана и быстрой навигации.">
+    <meta name="description" content="Полная карта сайта группы PurrRock. Тексты песен, переводы, mp3 и рассказы. Упрощенная версия для чтения.">
     <style>
-        body { font-family: sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; background: #fff; }
-        h1 { border-bottom: 2px solid #333; padding-bottom: 10px; }
-        h2 { margin-top: 30px; color: #444; }
+        body { 
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
+            color: #222; 
+            background: #fdfdfd; 
+        }
+        h1, h2, h3 { color: #111; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        h1 { margin-top: 0; }
+        .band-info { background: #f4f4f4; padding: 15px; border-radius: 8px; margin-bottom: 30px; }
         ul { list-style-type: none; padding: 0; }
-        li { margin-bottom: 10px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
-        a { color: #0066cc; text-decoration: none; font-weight: bold; font-size: 1.1em; }
-        a:hover { text-decoration: underline; }
-        p { color: #666; margin: 5px 0 0 0; }
-        .back-link { display: block; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ccc; }
+        li { margin-bottom: 15px; }
+        a.main-link { color: #0056b3; text-decoration: none; font-weight: bold; font-size: 1.1em; }
+        a.main-link:hover { text-decoration: underline; }
+        
+        a.sub-link { color: #666; font-size: 0.95em; margin-left: 10px; text-decoration: none; border-bottom: 1px dotted #999;}
+        a.sub-link:hover { color: #000; border-bottom-style: solid;}
+
+        a.mp3-link { color: #28a745; font-size: 0.85em; margin-left: 5px; font-weight: bold; text-decoration: none; text-transform: uppercase;}
+        a.mp3-link:hover { background-color: #eaffea; }
+
+        span.disabled-mp3 { color: #999; font-size: 0.8em; margin-left: 5px; }
+        span.disabled-item { color: #999; text-decoration: line-through; }
+        
+        p.desc { color: #555; margin: 5px 0 0 0; font-style: italic; font-size: 0.95em; }
+        .footer-nav { margin-top: 50px; padding-top: 20px; border-top: 2px solid #eee; font-size: 0.9em; color: #777; }
+        .socials a { margin-right: 15px; color: #333; }
     </style>
 </head>
 <body>
 
-    <h1>PurrRock: Виртуальная рок-банда</h1>
-    <p>Истории в шести струнах и одном мурчании. Тексты песен, проза и музыка.</p>
+    <header>
+        <h1>PurrRock: Виртуальная рок-банда</h1>
+        <div class="band-info">
+            <p><strong>О проекте:</strong> Истории в шести струнах и одном мурчании. Мы играем всё, что мурчит в душе: рок, романс, хип-хоп, баллады.</p>
+            <p><strong>Состав:</strong></p>
+            <ul>
+                <li>🐾 <strong>Ниппель (Nibble):</strong> Серебристый Нибелунг. Серьёзный, мудрый и рассудительный.</li>
+                <li>🐾 <strong>Пупс (Pips):</strong> Кот окраса такседо. Шустрый, весёлый, шаловливый.</li>
+            </ul>
+        </div>
+    </header>
 
     <nav role="navigation">
+        
         <h2>💿 Альбом "Диорама" (2025)</h2>
+        <p>Каждая песня — это диорама, где коты наблюдают за драмами людей и вещей.</p>
         <ul>
             <li>
-                <a href="lyrics/gata.html">Gata Murria</a>
-                <p>Amor y traición. История о создании ада.</p>
+                <a href="lyrics/gata.html" class="main-link">Gata Murria</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Amor y traición. Ты создала этот ад.</p>
             </li>
             <li>
-                <a href="lyrics/dao.html">Дао тунца</a>
-                <p>Рэп о проблеме коммуникации и обесценивании.</p>
+                <a href="lyrics/dao.html" class="main-link">Дао тунца</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Рэп о проблеме коммуникации и обесценивании.</p>
             </li>
             <li>
-                <a href="lyrics/korol.html">Король картонного замка</a>
-                <p>Гимн воображению и простым радостям.</p>
+                <a href="lyrics/korol.html" class="main-link">Король картонного замка</a>
+                <a href="music/korol.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/korol_en.html" class="sub-link">The Cardboard Castle King (Eng)</a>
+                <p class="desc">Гимн воображению и простым радостям.</p>
             </li>
             <li>
-                <a href="lyrics/devyataya.html">Девятая</a>
-                <p>Метафора бремени чужих ожиданий.</p>
+                <a href="lyrics/devyataya.html" class="main-link">Девятая</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Метафора бремени чужих ожиданий.</p>
             </li>
             <li>
-                <a href="lyrics/meh.html">Мех vs Tech</a>
-                <p>Эпичная покатушка на пылесосе.</p>
+                <a href="lyrics/meh.html" class="main-link">Мех vs Tech</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Эпичная покатушка на пылесосе!</p>
             </li>
             <li>
-                <a href="lyrics/bluz.html">Блюз затерянной мыши</a>
-                <p>Песня о памяти и утрате.</p>
+                <a href="lyrics/bluz.html" class="main-link">Блюз затерянной мыши</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Песня о памяти и утрате.</p>
             </li>
             <li>
-                <a href="lyrics/ballada.html">Баллада о Диком озере</a>
-                <p>Мистическая легенда о любви и смерти.</p>
+                <a href="lyrics/ballada.html" class="main-link">Баллада о Диком озере</a>
+                <span class="disabled-mp3">[mp3 недоступен]</span>
+                <p class="desc">Мистическая легенда о любви и смерти.</p>
             </li>
         </ul>
 
         <h2>💿 Альбом "Песни из шкафа" (2025)</h2>
+        <p>Альбом забытых песен. Меньше котов, больше боли, света и иронии.</p>
         <ul>
-            <li><a href="lyrics/spasibo.html">Спасибо вам</a> — Романс о несбывшейся любви.</li>
-            <li><a href="lyrics/vals.html">Вальс бесконечности</a> — Прощальный танец на берегу моря.</li>
-            <li><a href="lyrics/ya.html">Я тот, кто сидит в шкафу</a> — О внутреннем пробуждении.</li>
-            <li><a href="lyrics/zimniy.html">Зимний блюз</a> — Одиночество и надежда.</li>
-            <li><a href="lyrics/infotsyganskaya.html">Инфоцыганская</a> — Хип-хоп про лёгкие деньги.</li>
-            <li><a href="lyrics/feniks.html">Феникс</a> — Антивоенный марш.</li>
-            <li><a href="lyrics/tamara.html">Тамара</a> — Баллада о роковой морской сирене.</li>
-            <li><a href="lyrics/kostyanye.html">Костяные рыбы</a> — Космический рок-хоррор.</li>
-            <li><a href="lyrics/zheleznyy.html">Железный Дед</a> — Гимн силы и духа гор.</li>
+            <li>
+                <a href="lyrics/spasibo.html" class="main-link">Спасибо вам</a>
+                <a href="music/spasibo.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Романс о несбывшейся любви.</p>
+            </li>
+            <li>
+                <a href="lyrics/vals.html" class="main-link">Вальс бесконечности</a>
+                <a href="music/vals.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/vals_en.html" class="sub-link">Waltz of Infinity (Eng)</a>
+                <p class="desc">Прощальный танец на берегу моря.</p>
+            </li>
+            <li>
+                <a href="lyrics/ya.html" class="main-link">Я тот, кто сидит в шкафу</a>
+                <a href="music/ya.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">О внутреннем пробуждении.</p>
+            </li>
+            <li>
+                <a href="lyrics/zimniy.html" class="main-link">Зимний блюз</a>
+                <a href="music/zimniy.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Одиночество и надежда.</p>
+            </li>
+            <li>
+                <a href="lyrics/infotsyganskaya.html" class="main-link">Инфоцыганская</a>
+                <a href="music/infotsyganskaya.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Хип-хоп про лёгкие деньги.</p>
+            </li>
+            <li>
+                <a href="lyrics/feniks.html" class="main-link">Феникс</a>
+                <a href="music/feniks.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Антивоенный марш.</p>
+            </li>
+            <li>
+                <a href="lyrics/tamara.html" class="main-link">Тамара</a>
+                <a href="music/tamara.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Баллада о роковой морской сирене.</p>
+            </li>
+            <li>
+                <a href="lyrics/kostyanye.html" class="main-link">Костяные рыбы</a>
+                <a href="music/kostyanye.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/abyss.html" class="sub-link">Abyss Fish (Eng)</a>
+                <a href="music/abyss.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">Космический рок-хоррор.</p>
+            </li>
+            <li>
+                <a href="lyrics/zheleznyy.html" class="main-link">Железный Дед</a>
+                <a href="music/zheleznyy.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/iron.html" class="sub-link">Iron Elder (Eng)</a>
+                <a href="music/iron.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">Гимн силы и духа гор.</p>
+            </li>
         </ul>
 
         <h2>💿 Альбом "Hero Cats" (2024)</h2>
         <ul>
-            <li><a href="lyrics/migrant.html">Мигрант</a> — О тяжёлой жизни вдали от дома.</li>
-            <li><a href="lyrics/koty.html">Коты на колёсах</a> — О бесстрашных путешественниках.</li>
-            <li><a href="lyrics/trevel.html">Тревел-блогер</a> — Рок о погоне за лайками.</li>
-            <li><a href="lyrics/beseda.html">Беседа на подоконнике</a> — Философия у окна.</li>
-            <li><a href="lyrics/koty-kvadrobery.html">Коты-квадроберы</a> — Абсурдный Rock-n-Roll.</li>
-            <li><a href="lyrics/novogodniy.html">Новогодний мур-мюр</a> — Поздравление.</li>
-            <li><a href="lyrics/kakova.html">Какова Цена?</a> — Антивоенная песня.</li>
-            <li><a href="lyrics/novye.html">Новые игры</a> — Первая проба пера.</li>
+            <li>
+                <a href="lyrics/migrant.html" class="main-link">Мигрант</a>
+                <a href="music/migrant.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/migrant_en.html" class="sub-link">Migrant (Eng)</a>
+                <a href="music/migrant_en.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">О тяжёлой жизни и тоске вдали от дома.</p>
+            </li>
+            <li>
+                <a href="lyrics/koty.html" class="main-link">Коты на колёсах</a>
+                <a href="music/koty.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/cats.html" class="sub-link">Cats on the Wheels (Eng)</a>
+                <a href="music/cats.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">О бесстрашных котах-путешественниках.</p>
+            </li>
+            <li>
+                <a href="lyrics/trevel.html" class="main-link">Тревел-блогер</a>
+                <a href="music/trevel.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/travel.html" class="sub-link">Travel Blogger (Eng)</a>
+                <a href="music/travel.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">Рок о погоне за лайками.</p>
+            </li>
+            <li>
+                <a href="lyrics/beseda.html" class="main-link">Беседа на подоконнике</a>
+                <a href="music/beseda.mp3" class="mp3-link" download>[скачать mp3]</a><br>
+                <a href="lyrics/windowsill.html" class="sub-link">Windowsill Reflections (Eng)</a>
+                <a href="music/windowsill.mp3" class="mp3-link" download>[download mp3]</a>
+                <p class="desc">Философия у окна.</p>
+            </li>
+            <li>
+                <a href="lyrics/koty-kvadrobery.html" class="main-link">Коты-квадроберы</a>
+                <a href="music/koty-kvadrobery.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Заводной абсурдный Rock-n-Roll.</p>
+            </li>
+            <li>
+                <a href="lyrics/novogodniy.html" class="main-link">Новогодний мур-мюр</a>
+                <a href="music/novogodniy.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Поздравление от котов.</p>
+            </li>
+            <li>
+                <span class="disabled-item">Какова Цена? / Who Pays the Price?</span>
+                <span class="disabled-mp3">[Текст и аудио временно недоступны]</span>
+                <p class="desc">Антивоенная песня.</p>
+            </li>
+            <li>
+                <a href="lyrics/novye.html" class="main-link">Новые игры</a>
+                <a href="music/novye.mp3" class="mp3-link" download>[скачать mp3]</a>
+                <p class="desc">Первая мяу-попытка.</p>
+            </li>
         </ul>
 
-        <h2>📖 Проза</h2>
+        <h2>📖 Проза и Рассказы</h2>
         <ul>
-            <li><a href="proza/top.html">Топь</a> — Конфликт христианства и язычества.</li>
-            <li><a href="proza/protiv.html">PurrRock против машин</a> — Усатая гвардия против техники.</li>
+            <li>
+                <a href="proza/top.html" class="main-link">Топь</a>
+                <p class="desc">Конфликт христианства и язычества.</p>
+            </li>
+            <li>
+                <a href="proza/protiv.html" class="main-link">PurrRock против машин</a>
+                <p class="desc">Усатая гвардия или бездушная техника?</p>
+            </li>
         </ul>
     </nav>
 
-    <a href="index.html" class="back-link">← Вернуться к графической версии сайта</a>
+    <footer class="footer-nav">
+        <h3>Поддержка и контакты</h3>
+        <p class="socials">
+            <a href="https://boosty.to/2kota">Boosty</a> |
+            <a href="https://www.patreon.com/posts/na-vkusniashki-i-107229279">Patreon</a> |
+            <a href="mailto:purrrock@gmail.com">Email</a> |
+            <a href="https://www.youtube.com/@PurrRock/videos">YouTube</a>
+        </p>
+        <p><a href="index.html">← Вернуться к графической версии сайта</a></p>
+        <p>© PurrRock 2024-2025.</p>
+    </footer>
 
 </body>
 </html>
