@@ -4,204 +4,224 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
 <url>
   <loc>https://purrrock.github.io/</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.90</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lite.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://purrrock.github.io/lyrics/gata.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <loc>https://purrrock.github.io/lyrics/platypus.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://purrrock.github.io/lyrics/dao.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <loc>https://purrrock.github.io/lyrics/smena.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://purrrock.github.io/lyrics/korol.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lyrics/korol_en.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lyrics/devyataya.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lyrics/meh.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lyrics/bluz.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://purrrock.github.io/lyrics/ballada.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <loc>https://purrrock.github.io/lyrics/uv.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/saransk.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/vsemkota.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/portret.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/wayang.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/gata.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/dao.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/korol.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/korol_en.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/devyataya.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/meh.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/bluz.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://purrrock.github.io/lyrics/ballada.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/spasibo.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/vals.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/vals_en.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/ya.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/zimniy.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/infotsyganskaya.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/feniks.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/tamara.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/kostyanye.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/abyss.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/zheleznyy.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/iron.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/migrant.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/migrant_en.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/koty.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/cats.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/trevel.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/travel.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/beseda.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/windowsill.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/koty-kvadrobery.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/novogodniy.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/kakova.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/who.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://purrrock.github.io/lyrics/novye.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://purrrock.github.io/proza/top.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
+  <loc>https://purrrock.github.io/lite.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://purrrock.github.io/proza/protiv.html</loc>
-  <lastmod>2025-12-11T09:49:18+00:00</lastmod>
-  <priority>0.80</priority>
+  <loc>https://purrrock.github.io/index.html</loc>
+  <lastmod>2026-03-25T08:08:45+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+
+
 </urlset>
