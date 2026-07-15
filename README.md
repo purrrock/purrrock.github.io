@@ -35,7 +35,7 @@
 * **Vasil Litvin** — основной автор проекта
 * **Мария Протасова** — автор нескольких текстов песен
 
-Поддержать проект: [Boosty](https://boosty.to/2kota) | [Patreon](https://www.patreon.com/posts/na-vkusniashki-i-107229279)
+Поддержать проект: [Boosty](https://boosty.to/2kota)
 
 ## Контакты и ссылки
 
